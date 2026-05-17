@@ -1,0 +1,73 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;&lt;style&gt;
+        body{background: linear-gradient(90deg, rgb(227, 105, 243), rgb(27, 18, 61)); max-width: 100vw;}
+        #div{height: 100vh; width: 100%; display: none; position: fixed; background: linear-gradient(90deg, rgb(240, 208, 120), rgb(94, 160, 20)); top: 0;}
+        p{text-align: center; z-index: 100;}
+        #button{background-color: rgb(255, 255, 255); display: block; position: fixed; height: 100vh; width: 2%; left: 0; top: 0; border: none;  transition: all 11s ease; z-index: 4;}
+        #button.shrink{width: 100%; background: linear-gradient(90deg, rgb(164, 255, 171), rgb(4, 5, 87));}
+        #fin{opacity: 0; transition: all 5s ease; font-size: 1px; z-index: 999; position: relative;}
+        #fin.shrink{font-size: 200px; opacity: 1; margin-top: 0px;}
+        #dif{position: fixed; top: 0%; left: 0%; word-break: break-all; overflow-y: auto; width: 100%; height: 100vh;}
+
+
+    &lt;/style&gt;&lt;/head&gt;
+    &lt;body&gt;
+        
+        &lt;div id=&quot;div&quot; style=&quot;display: none;&quot;&gt;
+            &lt;div&gt;&lt;p&gt;V&lt;/p&gt;
+            &lt;p style=&quot;display: none;&quot;&gt;g&lt;/p&gt;
+            &lt;p&gt;&scaron;&lt;/p&gt;
+            &lt;p&gt;e&lt;/p&gt;&lt;/div&gt;
+            &lt;p style=&quot;display: none;&quot;&gt;r&lt;/p&gt;
+            &lt;div&gt;&lt;p&gt;N&lt;/p&gt;
+            &lt;p&gt;e&lt;/p&gt;
+            &lt;p&gt;j&lt;/p&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;p&gt;X&lt;/p&gt;
+            &lt;p style=&quot;display: none;&quot;&gt;q&lt;/p&gt;
+            &lt;p style=&quot;display: none;&quot;&gt;l&lt;/p&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;p style=&quot;display: none;&quot;&gt;S&lt;/p&gt;
+            &lt;p&gt;v&lt;/p&gt;
+            &lt;p style=&quot;display: none;&quot;&gt;a&lt;/p&gt;
+            &lt;p&gt;&aacute;&lt;/p&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;p style=&quot;display: none;&quot;&gt;V&lt;/p&gt;
+            &lt;p style=&quot;display: none;&quot;&gt;&scaron;&lt;/p&gt;
+            &lt;p style=&quot;display: none;&quot;&gt;e&lt;/p&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;p&gt;t&lt;/p&gt;
+            &lt;p&gt;k&lt;/p&gt;&lt;p style=&quot;display: none;&quot;&gt;l&lt;/p&gt;&lt;p style=&quot;display: none;&quot;&gt;l&lt;/p&gt;
+            &lt;p&gt;u&lt;/p&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button onclick=&quot;funguj()&quot; id=&quot;button&quot;&gt;&lt;/button&gt;
+        &lt;p id=&quot;fin&quot; onclick=&quot;speci&aacute;lnifunkce()&quot;&gt;🎇&lt;/p&gt;
+        &lt;div id=&quot;dif&quot; style=&quot;display: none; z-index: 2200; font-size: 20px; margin-top: 0;&quot;&gt;&lt;/div&gt;
+        &lt;script&gt;
+            
+            function funguj(){
+                                document.getElementById(&quot;div&quot;).style.display=&quot;block&quot;;
+                                document.getElementById(&quot;button&quot;).classList.add(&quot;shrink&quot;);
+                                
+                                
+                                
+        
+        setTimeout(() =&gt; {
+        document.getElementById(&quot;fin&quot;).classList.add(&quot;shrink&quot;);
+        }, 10000);}
+
+        function speci&aacute;lnifunkce(){document.getElementById(&quot;dif&quot;).style.display=&quot;block&quot;;
+                                const dif = document.getElementById(&quot;dif&quot;);
+                                 
+                                dif.style.display = &quot;block&quot;;
+                                
+
+                                    setInterval(() =&gt; {
+                                       dif.innerText += &quot;🎉&quot;.repeat(1);
+                                       dif.scrollTop = dif.scrollHeight;
+                                      }, 6);}
+
+
+        
+
+        
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
